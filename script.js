@@ -38,23 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Header scroll effect for pages with fixed header
-    const header = document.querySelector('.header:not(.header-small)');
-    if (header) {
-        let lastScroll = 0;
-        
-        window.addEventListener('scroll', function() {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 100) {
-                header.style.backgroundColor = 'rgba(102, 25, 35, 0.95)';
-            } else {
-                header.style.backgroundColor = '#661923';
-            }
-            
-            lastScroll = currentScroll;
-        });
-    }
+    // No scroll effect - header stays the same
     
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
