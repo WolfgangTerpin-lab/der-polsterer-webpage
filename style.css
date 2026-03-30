@@ -1,22 +1,24 @@
 /* ========================================
-   Der Polsterer - Modern CSS
+   Der Polsterer - Classic Warm CSS
    ======================================== */
 
-/* CSS Variables - Original Colors */
+/* CSS Variables - Warm Classic Colors */
 :root {
-    --primary: #661923;
-    --primary-dark: #4a1219;
-    --primary-light: #8a2433;
-    --accent: #179bdf;
-    --accent-dark: #1279ad;
-    --bg-light: #f9fafa;
+    --primary: #5C3D2E;
+    --primary-dark: #3E2820;
+    --primary-light: #7A5240;
+    --accent: #C9A96E;
+    --accent-dark: #A07850;
+    --accent-light: #E0C9A0;
+    --bg-light: #FAF6F0;
     --bg-white: #ffffff;
-    --text-dark: #384f59;
-    --text-light: #6d7d84;
-    --text-muted: #7a8991;
-    --border: #e5e9eb;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --shadow-lg: rgba(0, 0, 0, 0.15);
+    --bg-cream: #F5EDE0;
+    --text-dark: #2B1F16;
+    --text-light: #6B5344;
+    --text-muted: #8A7060;
+    --border: #E5D9C9;
+    --shadow: rgba(92, 61, 46, 0.1);
+    --shadow-lg: rgba(92, 61, 46, 0.18);
 }
 
 /* Reset & Base */
@@ -31,28 +33,28 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-dark);
     background-color: var(--bg-light);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', Georgia, serif;
     font-weight: 600;
     line-height: 1.3;
     color: var(--text-dark);
 }
 
 a {
-    color: var(--accent);
+    color: var(--accent-dark);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--accent-dark);
+    color: var(--primary);
 }
 
 img {
@@ -186,7 +188,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(102, 25, 35, 0.85) 0%, rgba(56, 79, 89, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(92, 61, 46, 0.88) 0%, rgba(62, 40, 32, 0.85) 100%);
 }
 
 .hero-content {
@@ -197,17 +199,21 @@ img {
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
     color: var(--bg-white);
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    color: var(--accent-light);
     margin-bottom: 40px;
     font-weight: 300;
+    font-style: italic;
 }
 
 /* ========================================
@@ -229,7 +235,7 @@ img {
 
 .btn-primary {
     background-color: var(--accent);
-    color: var(--bg-white);
+    color: var(--primary-dark);
     border-color: var(--accent);
 }
 
@@ -238,7 +244,7 @@ img {
     border-color: var(--accent-dark);
     color: var(--bg-white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(23, 155, 223, 0.4);
+    box-shadow: 0 4px 15px rgba(201, 169, 110, 0.4);
 }
 
 .btn-outline {
@@ -285,7 +291,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(102, 25, 35, 0.75);
+    background: rgba(92, 61, 46, 0.78);
 }
 
 .page-header h1 {
@@ -301,18 +307,20 @@ img {
     position: relative;
     z-index: 10;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--accent-light);
     text-align: center;
     margin-top: 10px;
+    font-style: italic;
 }
 
 /* ========================================
    Section Styles
    ======================================== */
 .section-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
     margin-bottom: 20px;
     position: relative;
+    font-weight: 400;
 }
 
 .section-title::after {
@@ -384,15 +392,15 @@ img {
 
 .stat-number {
     display: block;
-    font-family: 'Playfair Display', serif;
+    font-family: 'EB Garamond', Georgia, serif;
     font-size: 3rem;
-    font-weight: 700;
-    color: var(--bg-white);
+    font-weight: 400;
+    color: var(--accent-light);
 }
 
 .stat-label {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -402,7 +410,7 @@ img {
    ======================================== */
 .services-preview {
     padding: 100px 0;
-    background-color: var(--bg-light);
+    background-color: var(--bg-cream);
 }
 
 .services-grid {
@@ -491,7 +499,7 @@ img {
 
 .about-list li::before {
     content: '✓';
-    color: var(--accent);
+    color: var(--accent-dark);
     font-weight: bold;
     margin-right: 10px;
 }
@@ -506,14 +514,15 @@ img {
 }
 
 .cta h2 {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
     color: var(--bg-white);
     margin-bottom: 15px;
+    font-weight: 400;
 }
 
 .cta p {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--accent-light);
     margin-bottom: 30px;
     max-width: 600px;
     margin-left: auto;
@@ -560,6 +569,7 @@ img {
 .service-detail-content h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 
 .service-detail-content p {
@@ -580,7 +590,7 @@ img {
 
 .service-features li::before {
     content: '→';
-    color: var(--accent);
+    color: var(--accent-dark);
     font-weight: bold;
     margin-right: 10px;
 }
@@ -632,7 +642,7 @@ img {
     padding: 14px 18px;
     border: 2px solid var(--border);
     border-radius: 8px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     background-color: var(--bg-light);
@@ -642,7 +652,7 @@ img {
 .form-group textarea:focus {
     outline: none;
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(23, 155, 223, 0.1);
+    box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.15);
 }
 
 .form-group textarea {
@@ -658,7 +668,7 @@ img {
 
 .contact-info-card {
     padding: 30px;
-    background-color: var(--bg-light);
+    background-color: var(--bg-cream);
     border-radius: 12px;
     box-shadow: 0 5px 20px var(--shadow);
 }
@@ -692,7 +702,7 @@ img {
 }
 
 .contact-info-card a {
-    color: var(--accent);
+    color: var(--accent-dark);
     font-weight: 500;
 }
 
@@ -700,6 +710,127 @@ img {
     border-radius: 8px;
     overflow: hidden;
     margin-top: 15px;
+}
+
+/* ========================================
+   Reviews Section
+   ======================================== */
+.reviews-section {
+    padding: 100px 0;
+    background-color: var(--bg-cream);
+}
+
+.reviews-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews-header .section-title::after {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.review-card {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px var(--shadow-lg);
+}
+
+.review-stars {
+    color: var(--accent);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--accent-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.review-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-author-name {
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.review-author-detail {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.review-google-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.review-google-badge svg {
+    width: 16px;
+    height: 16px;
+}
+
+.reviews-cta {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.reviews-cta p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    font-size: 1.05rem;
 }
 
 /* ========================================
@@ -749,7 +880,7 @@ img {
    Footer
    ======================================== */
 .footer {
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     padding: 80px 0 0;
 }
 
@@ -761,7 +892,7 @@ img {
 }
 
 .footer-col {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .footer-logo {
@@ -769,6 +900,7 @@ img {
     width: auto;
     margin-bottom: 20px;
     filter: brightness(0) invert(1);
+    opacity: 0.9;
 }
 
 .footer-col p {
@@ -777,11 +909,13 @@ img {
 }
 
 .footer-col h4 {
-    color: var(--bg-white);
+    color: var(--accent-light);
     font-size: 1.1rem;
     margin-bottom: 25px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .footer-links,
@@ -801,7 +935,7 @@ img {
 }
 
 .footer-links a:hover {
-    color: var(--bg-white);
+    color: var(--accent-light);
 }
 
 .footer-bottom {
@@ -812,7 +946,7 @@ img {
 
 .footer-bottom p {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* ========================================
@@ -828,6 +962,10 @@ img {
     }
 
     .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reviews-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -919,6 +1057,10 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -931,7 +1073,7 @@ img {
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .hero-subtitle {
