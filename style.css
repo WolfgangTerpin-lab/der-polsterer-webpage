@@ -41,7 +41,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-weight: 600;
     line-height: 1.3;
     color: var(--text-dark);
@@ -97,7 +97,7 @@ img {
 }
 
 .logo-text {
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--bg-white);
@@ -106,7 +106,7 @@ img {
 }
 
 .footer-logo-text {
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--accent);
@@ -212,7 +212,7 @@ img {
 }
 
 .hero-title {
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: clamp(2.8rem, 6vw, 5rem);
     color: var(--bg-white);
     margin-bottom: 20px;
@@ -405,7 +405,7 @@ img {
 
 .stat-number {
     display: block;
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 3rem;
     font-weight: 400;
     color: var(--accent-light);
@@ -794,7 +794,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Old Standard TT', Georgia, serif;
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 1.2rem;
     font-weight: 600;
     flex-shrink: 0;
@@ -1119,5 +1119,81 @@ img {
 
     .contact-info-card {
         padding: 20px;
+    }
+}
+
+/* ========================================
+   Legal Pages (Impressum, Datenschutz)
+   ======================================== */
+.legal-content {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.legal-grid {
+    display: grid;
+    gap: 40px;
+}
+
+.legal-section {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px var(--shadow);
+}
+
+.legal-section h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--accent);
+}
+
+.legal-section h3 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin: 25px 0 15px;
+}
+
+.legal-section p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.legal-section a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+}
+
+.legal-section a:hover {
+    color: var(--primary);
+}
+
+.legal-list {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.legal-list li {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .legal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .legal-section:first-child {
+        grid-column: span 2;
     }
 }
