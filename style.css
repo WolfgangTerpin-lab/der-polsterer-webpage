@@ -80,13 +80,13 @@ img {
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     box-shadow: 0 2px 10px var(--shadow-lg);
 }
 
 .header-small {
     position: relative;
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
 }
 
 .header-inner {
