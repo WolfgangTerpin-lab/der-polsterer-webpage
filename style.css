@@ -902,12 +902,13 @@ img {
     grid-template-columns: 2fr 1fr 1fr 1.5fr;
     gap: 40px;
     padding-bottom: 60px;
-    text-align: center;
+    justify-items: center;
 }
 
 .footer-col {
     color: rgba(255, 255, 255, 0.75);
     text-align: center;
+    width: 100%;
 }
 
 .footer-logo {
